@@ -1,0 +1,223 @@
+.geral {
+	display: flex;
+	/* position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0; */
+	margin: auto;
+  
+	/* vertical-align: center; */
+  
+	/* display: flex;
+	  justify-content: center;
+	  align-items: center; */
+  
+	justify-content: center;
+	align-items: center;
+	font-family: EB Garamond, sans-serif;
+	color: #9b6448;
+	padding: 10px;
+	overflow-y: scroll;
+}
+
+.main{
+	display: flex;
+	justify-content: center;
+	font: normal normal normal 17px/1.4em 'eb garamond',serif;
+	color: rgb(222,195,182);
+	line-height: 1;
+	
+}
+.formInicial{
+	display: flex;
+	justify-content: center;
+	/* border: 1px solid black; */
+	width: 1000px;
+	padding: 10px;
+	background-color: rgb(80,109,133);
+
+}
+
+.divEsquerda{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	background-color: transparent;
+	margin: 0 15px 0 0px;
+}
+
+.divEsquerda a{
+	background-color: transparent;
+	/* color: white; */
+	text-decoration: none;
+	color: rgb(222,195,182);
+}
+
+.divEsquerda p{
+	background-color: transparent;
+	/* color: white; */
+	text-decoration: none;
+	color: rgb(222,195,182);
+	
+}
+
+.divEsquerda img{
+	background-color: transparent;
+}
+
+.faleComAGente, .textRedesSociais{
+	font-size: 18px;
+	color: white !important;
+	margin: 10px 0 0 0;
+}
+
+.sendWhatsapp{
+	border: 1px white dotted;
+	padding: 5px;
+	border-radius: 20px;
+	margin: 0 0 10px 0;
+}
+
+.divRedesSociais{
+	display: flex;
+	background-color: transparent;
+	margin: 25px 0 25px 0;
+}
+
+.divRedesSociais img{
+	background-color: transparent;
+}
+
+.divImage img{
+	/* max-width: 100% */
+}
+
+.divDireita{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	background-color: transparent;
+}
+
+
+.nomeEEndereco{
+	display: flex;
+	background-color: transparent;
+	margin: 10px 0 10px 0;
+}
+
+.emailETelefone{
+	display: flex;
+	background-color: transparent;
+	margin: 10px 0 10px 0;
+}
+
+.divAssunto{
+	display: flex;
+	background-color: transparent;
+	margin: 10px 0 10px 0;
+}
+
+.divAssunto label{
+	display: flex;
+	flex-direction: column;
+	background-color: transparent;
+}
+
+.inputs{
+	background-color: transparent;
+	color:white;
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid rgb(222,195,182);
+	margin-top: 10px;
+}
+
+.inputs::placeholder{
+	color:white
+}
+
+.areaMensaagem{
+	display: flex;
+	flex-direction: column;
+	background-color: transparent;
+
+}
+
+.areaMensaagem textarea{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgb(222,195,182);
+
+}
+
+.button-contato{
+	width: 150px;
+	height: 40px;
+	align-self: center;
+	border: 1px solid black;
+	border-radius: 40px;
+	background-color: #dec3bc;
+	color: #322118;
+}
+
+
+
+
+.divDados{
+	margin: 10px 0 10px 0;
+	background-color: transparent;
+}
+
+.divDados label{
+	margin: 10px 0 10px 0;
+	background-color: transparent;
+}
+
+.inputData{
+	display: flex;
+	flex-direction: column;
+	background-color: transparent;
+}
+
+.inputData input{
+	width: 200px;
+	background-color: transparent;
+}
+
+@media screen and (max-width: 700px) {
+	.geral{
+		display: block;
+		/* overflow: scroll; */
+		/* height: 1500px; */
+	}
+
+	.main{
+		height: 1500px;
+	}
+	.formInicial, .nomeEEndereco, .emailETelefone, .divDados, .divAssunto{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.areaMensagem{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+	}
+
+
+	.nomeEEndereco{
+		flex-direction: column;
+	}
+
+	.divDados{
+		/* height: 100%; */
+	}
+}

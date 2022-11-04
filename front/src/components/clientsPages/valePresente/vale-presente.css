@@ -1,0 +1,152 @@
+.main {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .main input, .main textarea{
+	  margin: 5px;
+	  background-color: transparent;
+	  border: 1px solid rgb(103, 67, 48);
+  }
+  .formInicial {
+	display: flex;
+	background-color: #dec3b6;
+	justify-content: center;
+	/* border: 1px solid black; */
+	width: 1000px;
+	padding: 10px;
+	color: #9b6448;
+
+  }
+  
+  .divImage {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 50%;
+	margin-right: 20px;
+  }
+  
+  .divImage img {
+	/* max-width: 100% */
+  }
+  
+  .divEsquerda {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+  }
+  
+  .spanValues {
+	margin: 5px;
+	padding: 5px;
+  }
+  
+  .totalParaQuem {
+	margin: 15px 0 15px 0;
+  }
+  
+  .totalParaQuem button {
+	margin: 0 10px 0 0;
+	border: 1px solid rgb(103, 67, 48);
+	background-color: transparent;
+  }
+  
+  .divDadosDestinatario {
+	margin: 10px 0 10px 0;
+  }
+  
+  .divDadosDestinatario label {
+	  display: flex;
+	  flex-direction: column;
+	  /* justify-content: ; */
+	margin: 10px 0 10px 0;
+  }
+
+  
+  .inputData {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .inputData input {
+	width: 200px;
+  }
+  
+  .divValue button {
+	  border: 1px solid rgb(103, 67, 48);
+	  background-color: transparent;
+  }
+  .divTotalQtd div{
+	  display: flex;
+	  justify-content: space-around;
+	  width: 70px;
+	  border: 1px solid rgb(103, 67, 48);
+	  border-radius: 2px;
+	  padding: 5px;
+  }
+  
+  .divTotalQtd button{
+	  background-color: transparent;
+	  border: none;
+  }
+  
+  .divParaQuem button{
+	  margin: 5px;
+	  	  padding: 5px;
+
+  }
+  
+  .shopButton {
+	display: flex;
+	flex-basis: auto;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+	overflow: hidden;
+	letter-spacing: 0.1em;
+	font-family: "open sans", sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	color: white;
+	border: none;
+	margin-top: 15px;
+	background-color: rgb(155, 100, 72);
+	padding: 0px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+	border: none;
+	transition: opacity 0.5s ease 0s;
+	font-weight: 700;
+	margin-bottom: 45px;
+	line-height: 42px;
+	cursor: pointer;
+  }
+  
+  @media screen and (max-width: 960px) {
+	  .main{
+		  padding: 5px;
+	  }
+  
+	  .formInicial{
+		  flex-direction: column;
+		  align-items: center;
+	  }
+  
+	  .divImage{
+		  width: 90%;
+	  }
+  
+	  .divImage img{
+		  width: 100%;
+		  margin-bottom: 20px;
+	  }
+  
+	  .divEsquerda{
+		  align-items: center;
+		  text-align: center;
+	  }
+  
+	  
+  }
+  

@@ -1,0 +1,374 @@
+
+.banner {
+	display: flex;
+	justify-content: center;
+  }
+  .carousel-div {
+	width: 500px;
+  }
+  .background-image-banner {
+	display: flex;
+	justify-content: space-around;
+	width: 80vw;
+	background-image: url("../../../images/gifHome.gif")
+  }
+  .text-banner {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 25%;
+  }
+  
+  .text-banner button {
+	background-color: #91563a;
+  }
+  
+  .ritual {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  .ritual button {
+	margin: 35px;
+	padding: 7px;
+	border-radius: 3px;
+	background-color: #91563a;
+  }
+  .ritual-title {
+	margin: 20px;
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	background-color: #bad3d7;
+  }
+  .steps {
+	width: 70%;
+	display: flex;
+	justify-content: space-evenly;
+  }
+  
+  .steps svg {
+	margin-top: 40px;
+  }
+  
+  .card-steps {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #506d85;
+	width: 25%;
+  }
+  
+  .card-steps img {
+	width: 70%;
+	border-radius: 50%;
+  }
+  
+  .base-catalog {
+	height: 100%;
+	color: RGB(222,195,182);
+	background-image: url("../../../images/gifHome.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+   /* background-position: center; 
+	height: 900px;
+  }
+  
+  .base-catalog-header h4{
+	  display: flex;
+		justify-content: center;
+	  
+  }
+  .card-catalog{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  color: rgb(52,33,24);
+  
+  }
+  
+  .card-catalog img{
+	  width: 240px;
+	  max-height: 320px;
+  }
+  
+  .name-card{
+	  margin-top: 20px;
+	  font-weight: bold;
+  }
+  
+  .base-catalog-texts{
+	  display: flex;
+	  /* flex-direction: column; */
+	  justify-content: space-around;
+	  color: rgb(52,33,24);
+	  margin-top: 50px;
+  }
+  
+  .card-texts-catalog{
+	  width: 230px;
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  color: rgb(52,33,24);
+	  margin-top: 50px;
+  }
+  
+  .card-texts-catalog p{
+	  text-align: center;
+  }
+  
+  .base-catalog-header{
+	  font-weight: bold;
+  }
+  
+  .base-catalog-description{
+	  
+	  display: flex;
+	  flex-wrap: wrap;
+  }
+  
+  #background-image-catalog {
+	width: 100%;
+	height: 660px;
+	position: absolute;
+	z-index: -1;
+  }
+  
+  .base-catalog-itens {
+	display: flex;
+	justify-content: space-around;
+  }
+  
+  /* .catalog-itens {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	width: 300px;
+  } */
+  
+  .catalog-itens h5 {
+	text-align: center;
+  }
+  .catalog-itens p {
+	text-align: center;
+  }
+  .section-banner-infos {
+	display: flex;
+	justify-content: center;
+  }
+  .banner-infos {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #dec3b6;
+	width: 90%;
+  }
+  
+  .steps-for-ritual {
+	width: 360px;
+  
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .steps-for-ritual a {
+	text-align: justify;
+	padding: 10px;
+	color: #342118;
+	text-decoration: none;
+  }
+  .steps-for-ritual a:hover {
+	color: #5f768a;
+  }
+  .btn-outline-dark:hover {
+	background-color: #fff;
+	color: #000;
+  }
+  .about-products {
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+  }
+  
+  .about-container {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .about-container h2 {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .about-container button {
+	width: 11rem;
+	background-color: #9d6147;
+  }
+  
+  .about-quality {
+	display: flex;
+	justify-content: center;
+  }
+  
+  .about-nature-responsabilty {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 40%;
+  }
+  .about-nature-responsabilty img {
+	height: 100%;
+  }
+  .about-nature-responsabilty svg {
+	margin: 20px 35px 20px 20px;
+  }
+  .about-nature-responsabilty p {
+	width: 20%;
+	text-align: center;
+	color: #9d6147;
+  }
+  .footer {
+	margin: 50px 50px 0 50px;
+	padding: 35px;
+	display: flex;
+	justify-content: center;
+	background-color: #506d85;
+  }
+  .footer-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .footer-contact {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .footer-contact a {
+	text-decoration: none;
+	color: #b29d96;
+  }
+  
+  .footer-contact-whatsapp {
+	padding: 6px;
+	border: dashed 1px;
+	border-radius: 20%;
+  }
+  
+  .footer-social-media {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .footer-address {
+	width: 30%;
+  }
+  
+  .bi-arrow-down{
+	  display: none;
+  }
+  
+  
+  @media screen and (max-width: 700px) {
+	  .bi-arrow-right{
+		  display: none;
+	  }
+	  .bi-arrow-down{
+		  display: flex;
+		  align-items: center;
+		  margin-top: 20px !important;
+		  margin-bottom: 20px;
+	  }
+  
+	  .steps{
+		  flex-direction: column;
+		  align-items: center;
+		  width: 50%;
+	  }
+  
+	  .card-steps{
+		  width: 100%;
+	  }
+	  .carousel-div{
+		  display: flex;
+		  justify-content: center;
+		  width: 100%;
+	  }
+  
+	  .about-quality{
+		  flex-direction: column;
+		  align-items: center;
+		  width: 50%;
+		  margin-top: 20px;
+	  }
+	  .about-quality img{
+		  width: 50%;
+		  margin-bottom: 10px;
+	  }
+  
+	  .about-nature-responsabilty{
+		  flex-direction: column;
+		  width: 100%;
+	  }
+  
+	  .about-nature-responsabilty img{
+		  width: 50%;
+	  }
+  
+	  .about-nature-responsabilty p{
+		  width: 100%;
+		  font-size: 15px;
+	  }
+  
+	  .section-banner-infos{
+		  width: 100%;
+		  background-color: #dec3b6;
+		  padding-top: 20px;
+		  padding-bottom: 20px;
+	  }
+  
+	  .banner-infos{
+		  width: 90%;
+	  }
+  
+	  .banner-infos img{
+		  width: 80%;
+	  }
+  
+	  .base-catalog{
+		  height: 2700px;
+	  }
+  
+	  .base-catalog-infos{
+		  font-size: 13px;
+
+	  }
+
+	  .base-catalog-infos h4{
+		  margin-top: 5px;
+		  margin-bottom: 5px;
+	  }
+  
+	  .base-catalog-itens{
+		  display: flex;
+		  flex-direction: column;
+		  
+	  }
+  
+	  .card-texts-catalog{
+		  width: auto;
+	  }
+  }
+  
+  

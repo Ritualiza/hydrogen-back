@@ -1,0 +1,23 @@
+
+@media screen and (max-width: 700px) {
+	.divSuperior{
+		flex-direction: column;
+		height: 600px;
+		margin: 0 auto;
+	}
+	.carrossel{
+		/* display: flex !important; */
+		justify-content: center;
+	}
+
+	.carrossel img{
+		max-width: 200px;
+	}
+	.textosSuperior{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+	
+}
