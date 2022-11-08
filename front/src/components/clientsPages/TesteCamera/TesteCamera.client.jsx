@@ -2,6 +2,12 @@ import {useEffect, useRef, useState} from 'react';
 
 const TesteCamera = () => {
   const [hasPhoto, setHasPhoto] = useState(false);
+  const [closeCamera, setCloseCamera] = useState(false);
+
+  const [camera, setCamera] = useState();
+
+  const [solveUnmount, setSolveUnmount] = useState(0);
+
   const videoRef = useRef(null);
   const photoRef = useRef(null);
 
@@ -11,6 +17,7 @@ const TesteCamera = () => {
         video: {width: 1920, heigt: 1080},
       })
       .then((stream) => {
+        setCamera(stream);
         let video = videoRef.current;
         video.srcObject = stream;
         video.play();
@@ -30,11 +37,9 @@ const TesteCamera = () => {
     photo.height = height;
 
     let ctx = photo.getContext('2d');
-    const a = new Image();
-    a.src = video.src;
-    console.log(a);
     ctx.drawImage(video, 0, 0, width, height);
-    // console.log(ctx);
+    // console.log(photo.toDataURL());
+
     setHasPhoto(true);
   };
 
@@ -47,12 +52,25 @@ const TesteCamera = () => {
 
     ctx.clearRect(0, 0, photo.width, photo.height);
 
+    setCloseCamera(true);
+
     setHasPhoto(false);
   };
 
   useEffect(() => {
     getVideo();
-  }, []);
+  }, [closeCamera]);
+
+  //   useEffect(() => {
+  //     return () => {
+  //       camera.getTracks().forEach((track) => {
+  //         track.stop();
+  //       });
+
+  //       console.log(solveUnmount);
+  //       setSolveUnmount(solveUnmount + 1);
+  //     };
+  //   }, []);
 
   return (
     <div className="divCamera">
@@ -69,8 +87,6 @@ const TesteCamera = () => {
       </div>
       <div className="divCamera">
         <canvas ref={photoRef}></canvas>
-
-        {/* {console.log(photoRef)} */}
         <button onClick={closePhoto}>Fechar!</button>
       </div>
     </div>

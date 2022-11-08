@@ -13,7 +13,7 @@ const questions = {
     question: 'Qual seu email',
     typeQuestion: 'line',
     direcionamento: 'q3',
-    pattern: /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/,
+    pattern: /^[a-z0-9._]+@[a-z0-9._]+\.[a-z]+(\.[a-z]+)?$/,
   },
   q3: {
     id: '3',
