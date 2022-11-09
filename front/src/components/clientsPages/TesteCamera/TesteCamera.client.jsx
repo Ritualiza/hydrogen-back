@@ -7,6 +7,7 @@ const TesteCamera = () => {
   //   const [camera, setCamera] = useState();
   const camera = useRef(null);
 
+  const solveMount = useRef(false);
   const solveUnmount = useRef(false);
 
   const videoRef = useRef(null);
@@ -59,8 +60,12 @@ const TesteCamera = () => {
   };
 
   useEffect(() => {
-    getVideo();
-  }, [closeCamera]);
+    if (solveMount.current) {
+      getVideo();
+    }
+
+    solveMount.current = true;
+  }, []);
 
   useEffect(
     () => () => {
@@ -69,9 +74,12 @@ const TesteCamera = () => {
           track.stop();
         });
       }
+      console.log(solveUnmount.current);
+      console.log(camera.current);
+
       solveUnmount.current = true;
 
-      console.log(solveUnmount);
+      //   console.log(hasPhoto);
     },
     [],
   );
