@@ -4,9 +4,10 @@ const TesteCamera = () => {
   const [hasPhoto, setHasPhoto] = useState(false);
   const [closeCamera, setCloseCamera] = useState(false);
 
-  const [camera, setCamera] = useState();
+  //   const [camera, setCamera] = useState();
+  const camera = useRef(null);
 
-  const [solveUnmount, setSolveUnmount] = useState(0);
+  const solveUnmount = useRef(false);
 
   const videoRef = useRef(null);
   const photoRef = useRef(null);
@@ -17,7 +18,7 @@ const TesteCamera = () => {
         video: {width: 1920, heigt: 1080},
       })
       .then((stream) => {
-        setCamera(stream);
+        camera.current = stream;
         let video = videoRef.current;
         video.srcObject = stream;
         video.play();
@@ -61,16 +62,19 @@ const TesteCamera = () => {
     getVideo();
   }, [closeCamera]);
 
-  //   useEffect(() => {
-  //     return () => {
-  //       camera.getTracks().forEach((track) => {
-  //         track.stop();
-  //       });
+  useEffect(
+    () => () => {
+      if (solveUnmount.current) {
+        camera.current.getTracks().forEach((track) => {
+          track.stop();
+        });
+      }
+      solveUnmount.current = true;
 
-  //       console.log(solveUnmount);
-  //       setSolveUnmount(solveUnmount + 1);
-  //     };
-  //   }, []);
+      console.log(solveUnmount);
+    },
+    [],
+  );
 
   return (
     <div className="divCamera">
